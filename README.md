@@ -3,30 +3,18 @@
 
 Submitted Files
 
-- [run_analysis.R]()
-- [README.md]()
-- [CodeBook.md]()
-- [tidy_data.txt]()
-- [tidy_data_avg.txt]()
+- [run_analysis.R](https://github.com/piperid/data-cleaning/blob/master/run_analysis.R)
+- [README.md](https://github.com/piperid/data-cleaning/blob/master/README.md)
+- [CodeBook.md](https://github.com/piperid/data-cleaning/blob/master/CodeBook.md)
 
-Instructions
+Using "data.table" and "dplyr" packages, the R script, "run_analysis.R", does:
 
-1. Checkout the code using 'git checkout https://github.com/rwstang/Getting-and-Cleaning-Data-Assignment.git YOURDIRECTORY'
+1. merge the training and the test sets to create one data set.
+2. extract only the measurements on the mean and standard deviation for each measurement.
+3. use descriptive activity names to name the activities in the data set
+4. appropriately label the data set with descriptive variable names.
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-2. Download the data set, https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-
-3. Unzip the data set into YOURDIRECTORY and you should see a folder named UCI HAR Dataset in YOURDIRECTORY
-
-4. Load RStudio and set your working directory using setwd("YOURDIRECTORY")
-
-5. Load the R script using source("run_analysis.txt")
-
-6. Run the R script using run_analysis() and after execution of the function has finished, you will see that merged_tidy_data.txt and calculated_tidy_data.txt would have been replaced with the newest outputs.
-
-Dependencies
-
-1. The R script assumes you have 'data.table' installed using install.packages("data.table")
-
-More Information
-
-For more information on the data set, please refer to http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+Output Files
+- [tidy_data.txt](https://github.com/piperid/data-cleaning/blob/master/tidy_data.txt): Merged tidy data
+- [tidy_data_avg.txt](https://github.com/piperid/data-cleaning/blob/master/tidy_data_avg.txt): tidy data with the average
