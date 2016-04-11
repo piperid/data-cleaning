@@ -1,6 +1,6 @@
 # Code Book
 
-This code book describes column variables in "tidy.txt".
+This code book summarizes column variables in "tidy.txt".
 
 ## Variables
 
