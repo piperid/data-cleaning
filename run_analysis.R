@@ -35,9 +35,8 @@ merged_data <- rbindlist(list(train, test))
 setnames(merged_data, c("subject", "activity", feature_names))
 merged_data$subject <- as.factor(merged_data$subject)
 merged_data$activity <- factor(merged_data$activity, levels = activityLabels[, V1], labels = activityLabels[, V2])
-write.table(merged_data, "tidy_data.txt", row.names = FALSE, quote = FALSE)
+#write.table(merged_data, "tidy_data.txt", row.names = FALSE, quote = FALSE)
 
 # from the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 data <- merged_data[, lapply(.SD, mean), by=c("subject", "activity")]
 write.table(data, "tidy_data_avg.txt", row.names = FALSE, quote = FALSE)
-
